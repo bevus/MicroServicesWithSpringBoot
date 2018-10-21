@@ -20,7 +20,7 @@ public class BasicController {
         return new WelcomeBean("Hello World");
     }
 
-    @GetMapping("welcome-with-parameter/name/{name}")
+    @GetMapping("/welcome-with-parameter/name/{name}")
     public WelcomeBean welcomeWithParameter(@PathVariable String name) {
         return new WelcomeBean(String.format(HELLO_WORLD_TEMPLATE, name));
     }
